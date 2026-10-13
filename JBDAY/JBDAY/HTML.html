@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ♡</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         LOADING SCREEN
+    ========================================== -->
+
+    <div class="loading-screen" id="loadingScreen">
+
+        <div class="loading-container">
+
+            <div class="video-box">
+                <video
+                    id="loadingVideo"
+                    autoplay
+                    muted
+                    playsinline
+                >
+                    <source
+                        src="Joanna.BDAY.mp4"
+                        type="video/mp4"
+                    >
+                </video>
+            </div>
+
+            <div class="flower">
+                ✿
+            </div>
+
+            <h1>
+                something is waiting for you...
+            </h1>
+
+            <p>
+                preparing your little birthday surprise ♡
+            </p>
+
+            <div class="loading-bar">
+                <div
+                    class="loading-progress"
+                    id="loadingProgress"
+                ></div>
+            </div>
+
+            <div
+                class="percentage"
+                id="percentage"
+            >
+                0%
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================================
+         GIFT SCREEN
+    ========================================== -->
+
+    <main
+        class="gift-screen"
+        id="giftScreen"
+    >
+
+        <div class="gift-background">
+
+            <!-- FLOATING CANDIES -->
+
+            <div class="candy candy-one">
+                🍬
+            </div>
+
+            <div class="candy candy-two">
+                🍭
+            </div>
+
+            <div class="candy candy-three">
+                🍬
+            </div>
+
+            <div class="candy candy-four">
+                🍭
+            </div>
+
+
+            <!-- =================================
+                 GIFT STAGE
+            ================================== -->
+
+            <section
+                class="gift-stage"
+                id="giftStage"
+            >
+
+                <div
+                    class="gift-wrapper"
+                    id="giftWrapper"
+                >
+
+                    <!-- GLOW -->
+
+                    <div class="gift-glow"></div>
+
+                    <!-- SHADOW -->
+
+                    <div class="gift-shadow"></div>
+
+                    <!-- LIGHT BURST -->
+
+                    <div
+                        class="gift-light"
+                        id="giftLight"
+                    ></div>
+
+
+                    <!-- =================================
+                         GIFT BOX
+                    ================================== -->
+
+                    <div
+                        class="gift-box"
+                        id="giftBox"
+                    >
+
+                        <!-- BODY -->
+
+                        <div class="gift-box-body">
+
+                            <div class="box-ribbon"></div>
+
+                            <div class="box-shine"></div>
+
+                        </div>
+
+
+                        <!-- LID -->
+
+                        <div
+                            class="gift-lid"
+                            id="giftLid"
+                        >
+
+                            <div class="lid-ribbon"></div>
+
+
+                            <!-- BOW -->
+
+                            <div class="lid-bow">
+
+                                <div class="bow-left"></div>
+
+                                <div class="bow-right"></div>
+
+                                <div class="bow-center"></div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     FOUR LETTER SCROLLS
+                ================================== -->
+
+                <div
+                    class="letters-container"
+                    id="lettersContainer"
+                >
+
+                    <!-- MEG -->
+
+                    <div
+                        class="letter-scroll scroll-meg"
+                        data-letter="meg"
+                    >
+
+                        <div class="scroll-roll"></div>
+
+                        <div class="scroll-paper">
+                            MEG
+                        </div>
+
+                        <div class="scroll-roll"></div>
+
+                    </div>
+
+
+                    <!-- NORAINE -->
+
+                    <div
+                        class="letter-scroll scroll-noraine"
+                        data-letter="noraine"
+                    >
+
+                        <div class="scroll-roll"></div>
+
+                        <div class="scroll-paper">
+                            NORAINE
+                        </div>
+
+                        <div class="scroll-roll"></div>
+
+                    </div>
+
+
+                    <!-- SAMMY -->
+
+                    <div
+                        class="letter-scroll scroll-sammy"
+                        data-letter="sammy"
+                    >
+
+                        <div class="scroll-roll"></div>
+
+                        <div class="scroll-paper">
+                            SAMMY
+                        </div>
+
+                        <div class="scroll-roll"></div>
+
+                    </div>
+
+
+                    <!-- LOUISE -->
+
+                    <div
+                        class="letter-scroll scroll-louise"
+                        data-letter="louise"
+                    >
+
+                        <div class="scroll-roll"></div>
+
+                        <div class="scroll-paper">
+                            LOUISE
+                        </div>
+
+                        <div class="scroll-roll"></div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 LITTLE MESSAGE
+            ================================== -->
+
+            <div class="gift-message">
+
+                <h2>
+                    ✦ a little something for you ✦
+                </h2>
+
+                <p>
+                    made with love ♡
+                </p>
+
+            </div>
+
+
+            <!-- =================================
+                 FANCY LETTER
+            ================================== -->
+
+            <div
+                class="letter-overlay"
+                id="letterOverlay"
+            >
+
+                <div
+                    class="fancy-letter"
+                    id="fancyLetter"
+                >
+
+                    <button
+                        class="close-letter"
+                        id="closeLetter"
+                    >
+                        ×
+                    </button>
+
+
+                    <div class="letter-decoration top-decoration">
+                        ✦ ❦ ✦
+                    </div>
+
+
+                    <h2 id="letterTitle">
+                        Dear Jojo,
+                    </h2>
+
+
+                    <div class="letter-line"></div>
+
+
+                    <p id="letterText"></p>
+
+
+                    <div class="letter-decoration bottom-decoration">
+                        ❦
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js.script.js"></script>
+
+</body>
+</html>
